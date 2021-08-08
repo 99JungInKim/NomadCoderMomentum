@@ -1,0 +1,139 @@
+* {
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+  color: white;
+}
+body {
+  font-family: "Noto Sans", sans-serif;
+  opacity: 0.8;
+}
+
+.hidden {
+  display: none;
+}
+
+#login-form,
+#greeting {
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  transform: translate(-50%, -50%);
+  font-size: 40px;
+  text-align: center;
+}
+
+input {
+  width: 300px;
+  height: 40px;
+  padding: 10px;
+  font-size: 18px;
+  text-align: center;
+  background: none;
+  border: none;
+  border-bottom: 2px solid whitesmoke;
+}
+
+input[type="text"]:first-child {
+  position: absolute;
+  left: 50%;
+  top: 80%;
+  transform: translate(-50%, -50%);
+}
+input::placeholder{
+  color:white;
+  font-weight: bold;
+}
+input[type="submit"] {
+  width: 100px;
+  height: 50px;
+  left: 50%;
+  border: none;
+  text-shadow: 2px 2px 2px rgb(0, 0, 0);
+}
+
+#clock {
+  position: absolute;
+  left: 50%;
+  top: 20%;
+  transform: translate(-50%, -50%);
+  font-size: 80px;
+  padding: 5px 25px;
+  border: 3px solid whitesmoke;
+}
+
+#quote {
+  position: absolute;
+  width: 100%;
+  left: 50%;
+  bottom: 1%;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+  text-align: center;
+  text-shadow: 2px 2px 2px rgb(0, 0, 0);
+}
+
+#quote span:last-child {
+  font-size: 14px;
+}
+
+#todo-form {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#todo-list {
+  font-weight: bold;
+  height: 170px;
+  width: 300px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  list-style: none;
+  overflow: scroll;
+}
+#todo-list::-webkit-scrollbar {
+  width: 10px;
+  background-color: none;
+}
+#todo-list::-webkit-scrollbar-track {
+  background-color: none;
+}
+#todo-list::-webkit-scrollbar-thumb {
+  width: 10px;
+  background-color: rgba(255,255,255,0.8);
+  border-radius: 10px;
+}
+#todo-list li {
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+#todo-list button {
+  margin-left: 10px;
+  color: red;
+  background: none;
+  border: none;
+}
+
+#weather {
+  position: absolute;
+  right: 3%;
+  top: 5%;
+  font-size: 15px;
+}
+#weather span:first-child {
+  font-weight: bold;
+  font-size: 20px;
+  color: white;
+}
