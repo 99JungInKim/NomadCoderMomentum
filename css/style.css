@@ -88,17 +88,22 @@ input[type="submit"] {
   justify-content: center;
 }
 
+#todo-point {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  flex-direction: column;
+  top: 70%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+}
 #todo-list {
   font-weight: bold;
-  height: 170px;
-  width: 300px;
   display: flex;
   align-items: center;
   flex-direction: column;
-  position: absolute;
-  top: 70%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  height: 170px;
+  width: 300px;
   list-style: none;
   overflow: scroll;
 }
@@ -118,14 +123,53 @@ input[type="submit"] {
   margin-bottom: 10px;
   font-size: 20px;
 }
-
+#success-point {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  flex-direction: column;
+  top: 70%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+}
+#success-list {
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 170px;
+  width: 300px;
+  list-style: none;
+  overflow: scroll;
+}
+#success-list::-webkit-scrollbar {
+  width: 10px;
+  background-color: none;
+}
+#success-list::-webkit-scrollbar-track {
+  background-color: none;
+}
+#success-list::-webkit-scrollbar-thumb {
+  width: 10px;
+  background-color: rgba(255,255,255,0.8);
+  border-radius: 10px;
+}
+#success-list li {
+  margin-bottom: 10px;
+  font-size: 20px;
+}
 #todo-list button {
   margin-left: 10px;
   color: red;
   background: none;
   border: none;
 }
-
+#success-list button {
+  margin-left: 10px;
+  color: red;
+  background: none;
+  border: none;
+}
 #weather {
   position: absolute;
   right: 3%;
